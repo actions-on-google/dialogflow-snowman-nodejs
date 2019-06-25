@@ -1,0 +1,62 @@
+{
+	"textures": [
+		{
+			"image": "win-lose.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1429,
+				"h": 340
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "you-lose.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1024,
+						"h": 600
+					},
+					"spriteSourceSize": {
+						"x": 99,
+						"y": 91,
+						"w": 823,
+						"h": 338
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 823,
+						"h": 338
+					}
+				},
+				{
+					"filename": "you-win.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1024,
+						"h": 600
+					},
+					"spriteSourceSize": {
+						"x": 207,
+						"y": 90,
+						"w": 602,
+						"h": 329
+					},
+					"frame": {
+						"x": 826,
+						"y": 1,
+						"w": 602,
+						"h": 329
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:3e79878c120a42cb8035d714c8cf1127:36e2ce13a63af1d657a2e789e9f123d0:1047580366271bd27f9a4a75e52cf22f$"
+	}
+}

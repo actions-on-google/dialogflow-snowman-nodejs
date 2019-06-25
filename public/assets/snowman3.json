@@ -1,0 +1,104 @@
+{
+	"textures": [
+		{
+			"image": "snowman.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 501,
+				"h": 1002
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "Head with Torso, Arms, and Lower.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1024,
+						"h": 600
+					},
+					"spriteSourceSize": {
+						"x": 263,
+						"y": 16,
+						"w": 499,
+						"h": 438
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 499,
+						"h": 438
+					}
+				},
+				{
+					"filename": "Head with Torso and Arms.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1024,
+						"h": 600
+					},
+					"spriteSourceSize": {
+						"x": 263,
+						"y": 16,
+						"w": 499,
+						"h": 279
+					},
+					"frame": {
+						"x": 1,
+						"y": 441,
+						"w": 499,
+						"h": 279
+					}
+				},
+				{
+					"filename": "Head with Torso.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1024,
+						"h": 600
+					},
+					"spriteSourceSize": {
+						"x": 444,
+						"y": 16,
+						"w": 136,
+						"h": 279
+					},
+					"frame": {
+						"x": 1,
+						"y": 722,
+						"w": 136,
+						"h": 279
+					}
+				},
+				{
+					"filename": "Head.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1024,
+						"h": 600
+					},
+					"spriteSourceSize": {
+						"x": 460,
+						"y": 16,
+						"w": 105,
+						"h": 186
+					},
+					"frame": {
+						"x": 139,
+						"y": 722,
+						"w": 105,
+						"h": 186
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:38bb8ebb75945fa59ee02453fa3bb65a:6f146a7e7a57da275eac6f93ed7da2ba:c42dd7f25a5b73257bd6e79c764e9683$"
+	}
+}
