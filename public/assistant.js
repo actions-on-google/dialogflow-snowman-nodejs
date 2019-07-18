@@ -87,20 +87,20 @@ class Assistant {
     if (!this.game.wordPlaceholder.isGameOver()) {
       if (foundLetter) { // trigger right guess random response
         this.game.correctSound.play();
-        this.canvas.sendTextQuery(`Right Guess ${letterOrWord}`);
+        this.canvas.sendTextQuery(`Right guess ${letterOrWord}`);
       } else { // trigger wrong guess intent from Actions on Google
         this.game.wrongSound.play();
-        this.canvas.sendTextQuery(`Wrong Guess ${letterOrWord}`);
+        this.canvas.sendTextQuery(`Wrong guess ${letterOrWord}`);
       }
     } else { // when game is over, present different options, and present
       // you win or lose image
       setTimeout(displayWinOrLoseScreen, 8000);
       if (this.game.wordPlaceholder.userWins()) {
         this.game.winSound.play();
-        this.canvas.sendTextQuery(`${rightWord.toUpperCase()} word is right`);
+        this.canvas.sendTextQuery(`Game won ${rightWord.toUpperCase()}`);
       } else {
         this.game.loseSound.play();
-        this.canvas.sendTextQuery(`The word to guess is ${rightWord.toUpperCase()}`);
+        this.canvas.sendTextQuery(`Game over reveal word ${rightWord.toUpperCase()}`);
         // Reveal the word in placeholder
         this.game.wordPlaceholder.isInWord(rightWord.toUpperCase());
       }
