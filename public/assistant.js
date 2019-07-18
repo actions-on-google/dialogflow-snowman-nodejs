@@ -30,8 +30,8 @@ class Assistant {
     this.game = game;
     const that = this;
     this.commands = {
-      GUESS: function(state) {
-        that.guess(state.letterOrWord.toUpperCase());
+      GUESS: function(data) {
+        that.guess(data.letterOrWord.toUpperCase());
       },
       PLAY_AGAIN: function() {
         that.game.startSnowman();
@@ -55,9 +55,9 @@ class Assistant {
     const that = this;
     // declare assistant canvas callbacks
     const callbacks = {
-      onUpdate(state) {
-        that.commands[state.command ? state.command.toUpperCase() :
-          'DEFAULT'](state);
+      onUpdate(data) {
+        that.commands[data.command ? data.command.toUpperCase() :
+          'DEFAULT'](data);
       },
     };
     // called by the Interactive Canvas web app once web app has loaded to
@@ -78,7 +78,7 @@ class Assistant {
     const rightWord = this.game.wordPlaceholder.word.text;
     const displayWinOrLoseScreen = () => {
       this.game.finishGame(this.game.wordPlaceholder.userWins());
-      this.canvas.sendTextQuery('Play again instructions');
+      this.canvas.sendTextQuery('Play again or quit?');
     };
 
     this.game.setCaptions.bind(this.game)('Guess letter', letterOrWord,
@@ -87,20 +87,20 @@ class Assistant {
     if (!this.game.wordPlaceholder.isGameOver()) {
       if (foundLetter) { // trigger right guess random response
         this.game.correctSound.play();
-        this.canvas.sendTextQuery(`Right guess ${letterOrWord}`);
+        this.canvas.sendTextQuery(`Right Guess ${letterOrWord}`);
       } else { // trigger wrong guess intent from Actions on Google
         this.game.wrongSound.play();
-        this.canvas.sendTextQuery(`Wrong guess ${letterOrWord}`);
+        this.canvas.sendTextQuery(`Wrong Guess ${letterOrWord}`);
       }
     } else { // when game is over, present different options, and present
       // you win or lose image
       setTimeout(displayWinOrLoseScreen, 8000);
       if (this.game.wordPlaceholder.userWins()) {
         this.game.winSound.play();
-        this.canvas.sendTextQuery(`Game won ${rightWord.toUpperCase()}`);
+        this.canvas.sendTextQuery(`${rightWord.toUpperCase()} word is right`);
       } else {
         this.game.loseSound.play();
-        this.canvas.sendTextQuery(`Game over reveal word ${rightWord.toUpperCase()}`);
+        this.canvas.sendTextQuery(`The word to guess is ${rightWord.toUpperCase()}`);
         // Reveal the word in placeholder
         this.game.wordPlaceholder.isInWord(rightWord.toUpperCase());
       }

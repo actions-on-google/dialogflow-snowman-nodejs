@@ -17,7 +17,7 @@
 'use strict';
 
 const functions = require('firebase-functions');
-const {dialogflow, ImmersiveResponse} = require('actions-on-google');
+const {dialogflow, HtmlResponse} = require('actions-on-google');
 
 const firebaseConfig = JSON.parse(process.env.FIREBASE_CONFIG);
 const app = dialogflow({debug: true});
@@ -26,7 +26,7 @@ const INSTRUCTIONS = `After 4 incorrect guesses, a snowman is built and the ` +
   `game is over. If you know the word, you can say, for instance, ` +
   `“The word is penguin.” You can try another word, or ask for help.`;
 
-const PLAY_AGAIN_INSTRUCTIONS = `You can play another or quit the game.`;
+const PLAY_AGAIN_INSTRUCTIONS = `You can play another or quit?`;
 
 const WELCOME_RESPONSES = [`Hey, you're back to Snowman! ` +
   `Try guessing a letter in the word, or guess the entire word ` +
@@ -43,9 +43,11 @@ const RIGHT_RESPONSES = ['Right on! Good guess.', 'Splendid!',
 const WRONG_RESPONSES = [`Whoops, that letter isn’t in the word. Try again!`,
   'Try again!', 'You can do this!', 'Incorrect. Keep on trying!'];
 
-const REVEAL_WORD_RESPONSES = [`Better luck next time!`, `Don't give up, keep on trying!`];
+const REVEAL_WORD_RESPONSES = [`Better luck next time!`,
+  `Don't give up, keep on trying!`];
 
-const WIN_RESPONSES = ['Congratulations and BRAVO!', 'You did it! So proud of you!',
+const WIN_RESPONSES = ['Congratulations and BRAVO!',
+  'You did it! So proud of you!',
   'Well done!', 'I’m happy for you!',
   'This is awesome! You’re awesome! Way to go!'];
 /**
@@ -66,14 +68,14 @@ app.intent('Welcome', (conv) => {
     conv.ask(`Welcome to Snowman! Try to figure out the word by ` +
       `guessing letters that you think are in the word. ${INSTRUCTIONS}`);
   }
-  conv.ask(new ImmersiveResponse({
+  conv.ask(new HtmlResponse({
     url: `https://${firebaseConfig.projectId}.firebaseapp.com`,
   }));
 });
 
 app.intent('Fallback', (conv) => {
   conv.ask(`I don’t understand. Try guessing a letter!`);
-  conv.ask(new ImmersiveResponse());
+  conv.ask(new HtmlResponse());
 });
 
 /**
@@ -84,8 +86,8 @@ app.intent('Fallback', (conv) => {
  */
 app.intent('Guess Letter or Word', (conv, {letterOrWord}) => {
   conv.ask(`Let's see if ${letterOrWord} is there...`);
-  conv.ask(new ImmersiveResponse({
-    state: {
+  conv.ask(new HtmlResponse({
+    data: {
       command: 'GUESS',
       letterOrWord,
     },
@@ -100,8 +102,8 @@ app.intent('Guess Letter or Word', (conv, {letterOrWord}) => {
  */
 app.intent('Toggle Captions', (conv) => {
   conv.ask(`Ok`);
-  conv.ask(new ImmersiveResponse({
-    state: {
+  conv.ask(new HtmlResponse({
+    data: {
       command: 'TOGGLE_CAPTIONS',
     },
   }));
@@ -114,8 +116,8 @@ app.intent('Toggle Captions', (conv) => {
  */
 app.intent('Play Again', (conv) => {
   conv.ask(`Okay, here’s another game!`);
-  conv.ask(new ImmersiveResponse({
-    state: {
+  conv.ask(new HtmlResponse({
+    data: {
       command: 'PLAY_AGAIN',
     },
   }));
@@ -128,7 +130,7 @@ app.intent('Play Again', (conv) => {
  */
 app.intent('Right Guess', (conv, {letterOrWord}) => {
   conv.ask(`${letterOrWord} is right. ${randomArrayItem(RIGHT_RESPONSES)}`);
-  conv.ask(new ImmersiveResponse());
+  conv.ask(new HtmlResponse());
 });
 
 /**
@@ -138,7 +140,7 @@ app.intent('Right Guess', (conv, {letterOrWord}) => {
  */
 app.intent('Wrong Guess', (conv, {letterOrWord}) => {
   conv.ask(`${letterOrWord} is wrong. ${randomArrayItem(WRONG_RESPONSES)}`);
-  conv.ask(new ImmersiveResponse());
+  conv.ask(new HtmlResponse());
 });
 
 /**
@@ -147,10 +149,10 @@ app.intent('Wrong Guess', (conv, {letterOrWord}) => {
  * @param  {conv} standard Actions on Google conversation object.
  */
 app.intent('Instructions', (conv) => {
-  conv.ask(`Welcome! Try guessing a letter that's in the word or guessing ` +
+  conv.ask(`Try guessing a letter that's in the word or guessing ` +
   `the word itself. Figure out the word before the snowman is built to win ` +
   `the game! ${INSTRUCTIONS}`);
-  conv.ask(new ImmersiveResponse());
+  conv.ask(new HtmlResponse());
 });
 
 /**
@@ -160,7 +162,7 @@ app.intent('Instructions', (conv) => {
  */
 app.intent('Play Again Instructions', (conv) => {
   conv.ask(PLAY_AGAIN_INSTRUCTIONS);
-  conv.ask(new ImmersiveResponse());
+  conv.ask(new HtmlResponse());
 });
 
 /**
@@ -170,9 +172,8 @@ app.intent('Play Again Instructions', (conv) => {
  * @param {word} set by the client.
  */
 app.intent('Game Over Reveal Word', (conv, {word}) => {
-  conv.ask(`Sorry, you lost. The word is ${word}. ` +
-    `${randomArrayItem(REVEAL_WORD_RESPONSES)}`);
-  conv.ask(new ImmersiveResponse());
+  conv.ask(`Sorry, you lost. The word is ${word}`);
+  conv.ask(new HtmlResponse());
 });
 
 /**
@@ -182,7 +183,7 @@ app.intent('Game Over Reveal Word', (conv, {word}) => {
  */
 app.intent('Game Won', (conv, {word}) => {
   conv.ask(`${word} word is right! ${randomArrayItem(WIN_RESPONSES)}`);
-  conv.ask(new ImmersiveResponse());
+  conv.ask(new HtmlResponse());
 });
 
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest(app);

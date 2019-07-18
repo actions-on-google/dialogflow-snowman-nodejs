@@ -161,7 +161,7 @@ class Word {
    * @param  {string} text or word to be guessed.
    */
   constructor(text) {
-    this.text = text;
+    this.text = text.toUpperCase();
     this.display = '_'.repeat(this.text.length);
   }
   /**
@@ -178,6 +178,7 @@ class Word {
    * @return {boolean} true when it finds a match against the actual word.
    */
   isInWord(letterOrWord) {
+    letterOrWord = letterOrWord.toLocaleUpperCase();
     // if word, compare guess and word, exist if there's no match
     if (letterOrWord.length > 1 &&
       letterOrWord.toLocaleUpperCase() != this.text.toLocaleUpperCase()) {
