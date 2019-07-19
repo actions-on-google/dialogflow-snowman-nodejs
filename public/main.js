@@ -121,7 +121,7 @@ class PlayGame extends Phaser.Scene {
 
     // Set assistant at game level.
     this.assistant = new Assistant(this);
-    // Call assistify to register assistant callbacks.
+    // Call setCallbacks to register assistant callbacks.
     this.assistant.setCallbacks(this);
 
     this.gameOver = false;

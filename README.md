@@ -1,6 +1,6 @@
 # Actions on Google: Snowman Interactive Canvas Sample
 
-This sample demonstrates how to create an [Interactive Canvas](https://developers.google.com/actions/canvas/) experience using Actions on Google for the Google Assistant -- using the [Node.js client library](https://github.com/actions-on-google/actions-on-google-nodejs) and deployed on [Cloud Functions for Firebase](https://firebase.google.com/docs/functions/) and [Firebase Hosting](https://firebase.google.com/docs/hosting).
+This sample demonstrates how to create an [Interactive Canvas](https://developers.google.com/actions/canvas/) experience using Actions on Google for the Google Assistant. It uses the [Node.js client library](https://github.com/actions-on-google/actions-on-google-nodejs) and is deployed on [Cloud Functions for Firebase](https://firebase.google.com/docs/functions/) and [Firebase Hosting](https://firebase.google.com/docs/hosting).
 
 ## Setup Instructions
 ### Prerequisites
@@ -13,11 +13,12 @@ This sample demonstrates how to create an [Interactive Canvas](https://developer
 ### Configuration
 #### Actions Console
 1. From the [Actions on Google Console](https://console.actions.google.com/), add a new project > **Create Project** > under **More options** > **Conversational**
-1. In the **Deploy** navigation section, click **Directory information**
+1. Click **Deploy** in the top menu. Then, click **Additional information**.
     1. Under **Category**, select **Games & fun**
-    1. Under **Immersive Canvas** *Do your Actions use Immersive Canvas?*, check **Yes**
-1. From the left navigation menu under **Build** > **Actions** > **Add Your First Action** > **Play game** > **GET STARTED IN DIALOGFLOW** (this will bring you to the Dialogflow console) > Select language and time zone > **CREATE**.
+    1. Under **Interactive Canvas** *Do your Actions use Interactive Canvas?*, check **Yes**
+1. Click **Develop** in the top menu. Then, click **Actions** > **Add Your First Action** > **Play game** > **GET STARTED IN DIALOGFLOW** (this will bring you to the Dialogflow console) > Select language and time zone > **CREATE**.
 1. In the Dialogflow console, go to **Settings** ⚙ > **Export and Import** > **Restore from zip** using the `agent.zip` in this sample's directory.
+
 
 #### Firebase Deployment
 1. On your local machine, in the `functions` directory, run `npm install`
