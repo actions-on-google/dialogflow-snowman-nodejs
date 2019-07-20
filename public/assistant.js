@@ -26,7 +26,7 @@ class Assistant {
    * and audio elements.
    */
   constructor(game) {
-    this.canvas = window.assistantCanvas;
+    this.canvas = window.interactiveCanvas;
     this.game = game;
     const that = this;
     this.commands = {
