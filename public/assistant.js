@@ -86,7 +86,7 @@ class Assistant {
       foundLetter ? 'Correct' : 'Incorrect');
     if (!this.game.wordPlaceholder.isGameOver()) {
       if (foundLetter) { // trigger right guess random response
-        this.game.correctSound.play();
+        this.game.correctSound.play('up');
         this.canvas.sendTextQuery(`Right Guess ${letterOrWord}`);
       } else { // trigger wrong guess intent from Actions on Google
         this.game.wrongSound.play();

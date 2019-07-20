@@ -65,25 +65,28 @@ class PlayGame extends Phaser.Scene {
 
     // Sounds
     this.wrongSound = new Howl({
-      src: ['./assets/sounds/cartoon-boing.ogg'],
+      src: ['https://actions.google.com/sounds/v1/cartoon/cartoon_boing.ogg'],
       autoplay: false,
       loop: false,
       volume: 1,
     });
     this.correctSound = new Howl({
-      src: ['./assets/sounds/hit.mp3'],
+      src: ['https://actions.google.com/sounds/v1/cartoon/siren_whistle.ogg'],
       autoplay: false,
       loop: false,
       volume: 1,
+      sprite: {
+        up: [0, 3300],
+      }
     });
     this.winSound = new Howl({
-      src: ['./assets/sounds/crazy-dinner-bell.ogg'],
+      src: ['https://actions.google.com/sounds/v1/cartoon/crazy_dinner_bell.ogg'],
       autoplay: false,
       loop: false,
       volume: 1,
     });
     this.loseSound = new Howl({
-      src: ['./assets/sounds/concussive-hit-guitar-boing.ogg'],
+      src: ['https://actions.google.com/sounds/v1/cartoon/concussive_hit_guitar_boing.ogg'],
       autoplay: false,
       loop: false,
       volume: 1,
@@ -147,7 +150,7 @@ class PlayGame extends Phaser.Scene {
         if (!res) {
           that.wrongSound.play();
         } else {
-          that.correctSound.play();
+          that.correctSound.play('up');
         }
       }
       if (that.wordPlaceholder.isGameOver()) {
