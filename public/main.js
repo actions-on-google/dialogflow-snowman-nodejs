@@ -39,7 +39,7 @@ window.onload = () => {
 class PlayGame extends Phaser.Scene {
   /**
    * Constructor to initialize game including Google Assitant Canvas object.
-   * Assistant Canvas object registers all callbacks triggered by voice.
+   * Assistant Canvas Action object registers all callbacks triggered by voice.
    *
    * "PlayGame" scene.
    */
@@ -123,9 +123,9 @@ class PlayGame extends Phaser.Scene {
     this.wordPlaceholder = new WordPlaceholder(this, this.dictionary.getWord());
 
     // Set assistant at game level.
-    this.assistant = new Assistant(this);
-    // Call setCallbacks to register assistant callbacks.
-    this.assistant.setCallbacks();
+    this.action = new Action(this);
+    // Call setCallbacks to register assistant action callbacks.
+    this.action.setCallbacks();
 
     this.gameOver = false;
     this.setCaptions('___', '____', this.wordPlaceholder.word.text,
@@ -177,7 +177,7 @@ class PlayGame extends Phaser.Scene {
   /**
    * Update text debugging fields for every guess. Used for debugging purposes.
    *
-   * @param  {Text} command Google Assistant command text field.
+   * @param  {Text} command Google Assistant Action command text field.
    * @param  {Text} letter Guessed letter text field.
    * @param  {Text} word to be guessed text field.
    * @param  {Text} status to display when guess is correct or incorrect.

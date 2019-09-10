@@ -17,10 +17,10 @@
 'use strict';
 
 /**
- * This class is used as a wrapper for Google Canvas Assistant class along
+ * This class is used as a wrapper for Google Canvas Assistant Action class along
  * with its callbacks.
  */
-class Assistant {
+class Action {
   /**
    * @param  {phaser} game which serves as a container of all visual
    * and audio elements.
@@ -47,13 +47,13 @@ class Assistant {
   }
 
   /**
-   * Register all callbacks used by Google Assistant
+   * Register all callbacks used by Google Assistant Action
    * executed during game creation time.
    *
    */
   setCallbacks() {
     const that = this;
-    // declare assistant canvas callbacks
+    // declare assistant canvas action callbacks
     const callbacks = {
       onUpdate(data) {
         that.commands[data.command ? data.command.toUpperCase() :
