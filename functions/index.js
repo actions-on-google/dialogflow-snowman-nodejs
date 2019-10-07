@@ -50,6 +50,7 @@ const WIN_RESPONSES = ['Congratulations and BRAVO!',
   'You did it! So proud of you!',
   'Well done!', 'I’m happy for you!',
   'This is awesome! You’re awesome! Way to go!'];
+
 /**
  * Pick a random item from an array. This is to make
  * responses more conversational.
@@ -156,23 +157,14 @@ app.intent('Instructions', (conv) => {
 });
 
 /**
- * Provide a subset of instructions for the game after game is over.
- *
- * @param  {conv} standard Actions on Google conversation object.
- */
-app.intent('Play Again Instructions', (conv) => {
-  conv.ask(PLAY_AGAIN_INSTRUCTIONS);
-  conv.ask(new HtmlResponse());
-});
-
-/**
  * Reveal the word when player loses the game.
  *
  * @param {conv} standard Actions on Google conversation object.
  * @param {word} set by the client.
  */
 app.intent('Game Over Reveal Word', (conv, {word}) => {
-  conv.ask(`Sorry, you lost. The word is ${word}`);
+  conv.ask(`<speak>Sorry, you lost.<mark name="REVEAL_WORD"/> The word is ${word}.` +
+    `${PLAY_AGAIN_INSTRUCTIONS}</speak>`);
   conv.ask(new HtmlResponse());
 });
 
@@ -182,7 +174,8 @@ app.intent('Game Over Reveal Word', (conv, {word}) => {
  * @param {conv} standard Actions on Google conversation object.
  */
 app.intent('Game Won', (conv, {word}) => {
-  conv.ask(`${word} word is right! ${randomArrayItem(WIN_RESPONSES)}`);
+  conv.ask(`<speak>${word} word is right!<mark name="REVEAL_WORD"/> ${randomArrayItem(WIN_RESPONSES)} ` +
+    `${PLAY_AGAIN_INSTRUCTIONS}</speak>`);
   conv.ask(new HtmlResponse());
 });
 

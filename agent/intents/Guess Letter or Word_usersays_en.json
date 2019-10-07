@@ -1,0 +1,178 @@
+[
+  {
+    "id": "9c051ca9-b072-44ee-a72a-e2218f542ac1",
+    "data": [
+      {
+        "text": "France",
+        "alias": "letterOrWord",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8b9c4db1-dde4-4dd1-b833-80d64f5185cc",
+    "data": [
+      {
+        "text": "it\u0027s ",
+        "userDefined": false
+      },
+      {
+        "text": "google",
+        "alias": "letterOrWord",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d86bc307-8462-4e10-acf5-42c5728f5e17",
+    "data": [
+      {
+        "text": "I guess it\u0027s ",
+        "userDefined": false
+      },
+      {
+        "text": "house",
+        "alias": "letterOrWord",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7c2958d4-7bce-491f-b26a-123369149436",
+    "data": [
+      {
+        "text": "it\u0027s ",
+        "userDefined": false
+      },
+      {
+        "text": "sombrero",
+        "alias": "letterOrWord",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a82e6e0b-92cb-41c1-aecc-4e671286f60c",
+    "data": [
+      {
+        "text": "it\u0027s the word ",
+        "userDefined": false
+      },
+      {
+        "text": "apartment",
+        "alias": "letterOrWord",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "43ecd333-5efe-491a-97f3-be5b6f72af36",
+    "data": [
+      {
+        "text": "what about ",
+        "userDefined": false
+      },
+      {
+        "text": "panfleto",
+        "alias": "letterOrWord",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "785ec77b-dc43-4a56-8737-f211a9099a49",
+    "data": [
+      {
+        "text": "try ",
+        "userDefined": false
+      },
+      {
+        "text": "Colombia",
+        "alias": "letterOrWord",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5c4bc92a-7ea2-4b08-a5fd-8e77006f699a",
+    "data": [
+      {
+        "text": "the word is ",
+        "userDefined": false
+      },
+      {
+        "text": "home",
+        "alias": "letterOrWord",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ae7f754f-2dc1-4832-98c5-5c295b6d7c1e",
+    "data": [
+      {
+        "text": "i guess ",
+        "userDefined": false
+      },
+      {
+        "text": "z",
+        "alias": "letterOrWord",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e15efab3-eabe-4f19-ab3c-0f330d6fa2b6",
+    "data": [
+      {
+        "text": "letter ",
+        "userDefined": false
+      },
+      {
+        "text": "a",
+        "alias": "letterOrWord",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

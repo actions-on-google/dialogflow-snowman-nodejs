@@ -1,0 +1,50 @@
+[
+  {
+    "id": "c03bcaef-f3d3-4c35-a09e-d9e2efc9a5b7",
+    "data": [
+      {
+        "text": "quit game",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a43737f9-5422-4b0d-8551-901fc63d305f",
+    "data": [
+      {
+        "text": "goodbye",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bf72f650-9128-4928-a96d-53c226b422f9",
+    "data": [
+      {
+        "text": "I\u0027m done",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9c63f7e8-5dc6-4101-ba98-8e5b98fffe57",
+    "data": [
+      {
+        "text": "quit",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

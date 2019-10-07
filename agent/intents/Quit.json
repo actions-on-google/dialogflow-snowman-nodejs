@@ -1,0 +1,31 @@
+{
+  "id": "0a44ec19-583e-4a55-9507-a7a3141280a2",
+  "name": "Quit",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

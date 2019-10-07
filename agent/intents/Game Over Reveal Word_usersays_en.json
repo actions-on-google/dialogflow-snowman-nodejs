@@ -1,0 +1,38 @@
+[
+  {
+    "id": "807291f6-9f67-4081-9015-7b287c9376e8",
+    "data": [
+      {
+        "text": "Game over reveal word ",
+        "userDefined": false
+      },
+      {
+        "text": "home",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "10e0c1f1-decc-4dc3-8bcb-2a181f39a46e",
+    "data": [
+      {
+        "text": "The word to guess is ",
+        "userDefined": false
+      },
+      {
+        "text": "home",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

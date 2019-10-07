@@ -1,0 +1,44 @@
+{
+  "id": "3b9ac396-dde2-4311-9103-13d307481c9e",
+  "name": "Game Won",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "9c81abca-eb30-47a4-87ac-1bb2da62187d",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "word",
+          "value": "$word",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

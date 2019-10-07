@@ -234,7 +234,7 @@ class Word {
   *
   * @param  {integer} index to replace placeholder with replacement letter.
   * @param  {string} replacement letter.
-  * @return  {string} When user guess is rightm replace one placeholder with
+  * @return  {string} When user guess is right replace one placeholder with
   * a correct letter.
   */
   replaceAt(index, replacement) {

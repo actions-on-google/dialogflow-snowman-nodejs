@@ -14,8 +14,6 @@
  * limitations under the License.
  */
 
-'use strict';
-
 /**
  * This class is used as a wrapper for Google Canvas Assistant Action class along
  * with its callbacks.
@@ -49,12 +47,17 @@ class Action {
   /**
    * Register all callbacks used by Google Assistant Action
    * executed during game creation time.
-   *
    */
   setCallbacks() {
     const that = this;
     // declare assistant canvas action callbacks
     const callbacks = {
+      onTtsMark(markName) {
+        if (markName === 'REVEAL_WORD') {
+          // display the correct word to the user
+          that.revealCorrectWord();
+        }
+      },
       onUpdate(data) {
         that.commands[data.command ? data.command.toUpperCase() :
           'DEFAULT'](data);
@@ -76,10 +79,6 @@ class Action {
   guess(letterOrWord) {
     const foundLetter = this.game.wordPlaceholder.isInWord(letterOrWord);
     const rightWord = this.game.wordPlaceholder.word.text;
-    const displayWinOrLoseScreen = () => {
-      this.game.finishGame(this.game.wordPlaceholder.userWins());
-      this.canvas.sendTextQuery('Play again or quit?');
-    };
 
     this.game.setCaptions.bind(this.game)('Guess letter', letterOrWord,
         rightWord,
@@ -92,18 +91,27 @@ class Action {
         this.game.wrongSound.play();
         this.canvas.sendTextQuery(`Wrong Guess ${letterOrWord}`);
       }
-    } else { // when game is over, present different options, and present
+    } else {
+      // when game is over, present different options, and present
       // you win or lose image
-      setTimeout(displayWinOrLoseScreen, 8000);
       if (this.game.wordPlaceholder.userWins()) {
         this.game.winSound.play();
         this.canvas.sendTextQuery(`${rightWord.toUpperCase()} word is right`);
       } else {
         this.game.loseSound.play();
         this.canvas.sendTextQuery(`The word to guess is ${rightWord.toUpperCase()}`);
-        // Reveal the word in placeholder
-        this.game.wordPlaceholder.isInWord(rightWord.toUpperCase());
       }
     }
+  }
+
+  /**
+   * Reveal the correct word and display
+   * the end game screen after a fixed delay.
+   */
+  revealCorrectWord() {
+    const wordPlaceholder = this.game.wordPlaceholder;
+    const wordToGuess = wordPlaceholder.word.text;
+    wordPlaceholder.isInWord(wordToGuess.toUpperCase());
+    setTimeout(() => {this.game.displayGameOverScreen(wordPlaceholder.userWins())}, 3000);
   }
 }

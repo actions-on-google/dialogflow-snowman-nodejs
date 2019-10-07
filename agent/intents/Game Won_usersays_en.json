@@ -1,0 +1,38 @@
+[
+  {
+    "id": "b697b0f5-fefc-484f-ab89-d545d4412bb4",
+    "data": [
+      {
+        "text": "Game won ",
+        "userDefined": false
+      },
+      {
+        "text": "Home",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9bf15f83-efa2-4563-8a46-2de51521e816",
+    "data": [
+      {
+        "text": "Home",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " word is right",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

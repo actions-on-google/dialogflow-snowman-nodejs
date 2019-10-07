@@ -1,0 +1,62 @@
+[
+  {
+    "id": "d8b0cb74-60c4-4d93-a325-982ae246dd18",
+    "data": [
+      {
+        "text": "play another game",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9b73e677-d425-4aee-bca4-1c268beb3033",
+    "data": [
+      {
+        "text": "another word",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "381340ae-df97-4415-adb0-95a6ab20aaa3",
+    "data": [
+      {
+        "text": "another one",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7eea3714-ce96-49e8-8acb-9bcbdc377664",
+    "data": [
+      {
+        "text": "restart",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4b035b23-d044-4705-9be3-bdd1a2e403cc",
+    "data": [
+      {
+        "text": "play again",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

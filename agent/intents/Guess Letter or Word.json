@@ -1,0 +1,44 @@
+{
+  "id": "bd490bf1-d6b8-4e8e-90d5-8a059ca12474",
+  "name": "Guess Letter or Word",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "3268c5a2-d5be-417b-be63-0f3faf551414",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "letterOrWord",
+          "value": "$letterOrWord",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
