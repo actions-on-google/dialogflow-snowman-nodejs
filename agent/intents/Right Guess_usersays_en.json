@@ -1,0 +1,20 @@
+[
+  {
+    "id": "e90ec358-9ac6-49b1-9be8-65bd9c4268d0",
+    "data": [
+      {
+        "text": "Right guess ",
+        "userDefined": false
+      },
+      {
+        "text": "home",
+        "alias": "letterOrWord",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

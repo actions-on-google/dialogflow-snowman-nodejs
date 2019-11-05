@@ -198,7 +198,6 @@ class PlayGame extends Phaser.Scene {
     captions.forEach((caption) => caption.setVisible(!caption.visible));
   }
 
-
   /**
    * Call to start snowman and reset images from initial state.
    */
@@ -221,22 +220,21 @@ class PlayGame extends Phaser.Scene {
     this.visibleObjects.forEach((vo) => vo.setAlpha(visible ? 1 : 0));
   }
 
-
   /**
    * Finish game by setting invisible main stage (sky, word placeholder,
    * and snowman) and displaying images of win or lose.
    * @param  {boolean} win true to display win image or false to display
    * false one.
    */
-  finishGame(win) {
+  displayGameOverScreen(userWins) {
     const that = this;
     // fade duration and RGB to fade out and fade in main camera
-    that.cameras.main.fade(1000, 255, 255, 255, true, (cam, complete) => {
+    that.cameras.main.fade(3000, 255, 255, 255, true, (cam, complete) => {
       if (complete === 1) {
         that.setVisible(0);
-        if (win) this.youWinImage.setVisible(true);
+        if (userWins) this.youWinImage.setVisible(true);
         else this.youLoseImage.setVisible(true);
-        that.cameras.main.fadeIn(2000, 255, 255, 255);
+        that.cameras.main.fadeIn(3000, 255, 255, 255);
       }
     });
   }

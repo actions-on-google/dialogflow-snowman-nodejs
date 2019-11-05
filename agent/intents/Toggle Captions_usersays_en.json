@@ -1,0 +1,26 @@
+[
+  {
+    "id": "e77b3ba0-1c49-4808-9fa8-9a8bbb179918",
+    "data": [
+      {
+        "text": "toggle captions",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c31cc149-763c-4afc-8b08-9ebe5f4a339e",
+    "data": [
+      {
+        "text": "hide captions",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]
