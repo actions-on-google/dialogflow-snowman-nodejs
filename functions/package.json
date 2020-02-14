@@ -1,15 +1,15 @@
 {
-  "name": "snowman-canvas-sample-functions",
-  "description": "Snowman Actions on Google Interactive Canvas Sample Functions",
+  "name": "snow-pal-canvas-sample-functions",
+  "description": "Snow Pal Actions on Google Interactive Canvas Sample Cloud Function",
   "license": "Apache-2.0",
   "private": true,
   "engines": {
     "node": "8"
   },
   "dependencies": {
-    "actions-on-google": "preview",
-    "firebase-admin": "~7.0.0",
-    "firebase-functions": "^2.3.1"
+    "actions-on-google": "^2.10.0",
+    "firebase-admin": "~8.0.0",
+    "firebase-functions": "^3.1.0"
   },
   "scripts": {
     "lint": "./node_modules/.bin/eslint --fix \"**/*.js\"",

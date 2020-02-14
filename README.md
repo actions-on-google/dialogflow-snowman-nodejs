@@ -1,4 +1,4 @@
-# Actions on Google: Snowman Interactive Canvas Sample
+# Actions on Google: Snow Pal Interactive Canvas Sample
 
 This sample demonstrates how to create an [Interactive Canvas](https://developers.google.com/assistant/interactivecanvas/) experience using Actions on Google for the Google Assistant. It uses the [Node.js client library](https://github.com/actions-on-google/actions-on-google-nodejs) and is deployed on [Cloud Functions for Firebase](https://firebase.google.com/docs/functions/) and [Firebase Hosting](https://firebase.google.com/docs/hosting).
 
@@ -35,7 +35,6 @@ This sample demonstrates how to create an [Interactive Canvas](https://developer
 ### Running this Sample
 + You can test your Action on any Google Assistant-enabled device on which the Assistant is signed into the same account used to create this project. Just say or type, “OK Google, talk to my test app”.
 + You can also use the Actions on Google Console simulator to test most features and preview on-device behavior.
-+ To show the debug overlay, by saying the utterance `toggle captions` while playing the game.
 
 ## References & Issues
 + Questions? Go to [StackOverflow](https://stackoverflow.com/questions/tagged/actions-on-google), [Assistant Developer Community on Reddit](https://www.reddit.com/r/GoogleAssistantDev/) or [Support](https://developers.google.com/assistant/support).

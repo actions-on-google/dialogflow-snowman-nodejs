@@ -1,6 +1,18 @@
 [
   {
-    "id": "9ae9fbae-009c-4749-b9bf-b9a27231934e",
+    "id": "0ec1ea7a-2c96-4451-9f4b-b05c4a04db60",
+    "data": [
+      {
+        "text": "no",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "424f4e7a-2d49-4e98-9a42-e3add9af9f2c",
     "data": [
       {
         "text": "quit game",
@@ -12,7 +24,7 @@
     "updated": 0
   },
   {
-    "id": "583e641e-1fb9-4414-84ce-6fe0c3cb6717",
+    "id": "e39906ba-fb02-4c53-953f-9a7594a15950",
     "data": [
       {
         "text": "goodbye",
@@ -24,7 +36,7 @@
     "updated": 0
   },
   {
-    "id": "904959f2-e380-4756-bb0e-7e2b8ec92860",
+    "id": "b63a7f10-1bfe-44f1-ae24-a6d005535e5b",
     "data": [
       {
         "text": "I\u0027m done",
@@ -36,7 +48,7 @@
     "updated": 0
   },
   {
-    "id": "577d7af2-d745-4320-b8ce-09882e603395",
+    "id": "ce021760-9e84-4fec-a9af-c9d3711cb6ec",
     "data": [
       {
         "text": "quit",

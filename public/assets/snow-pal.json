@@ -1,0 +1,120 @@
+{
+	"textures": [
+		{
+			"image": "snow-pal.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 695,
+				"h": 188
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "Bottom.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 204,
+						"h": 184
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 9,
+						"w": 184,
+						"h": 166
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 184,
+						"h": 166
+					}
+				},
+				{
+					"filename": "Left_Arm.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 334,
+						"h": 133
+					},
+					"spriteSourceSize": {
+						"x": 42,
+						"y": 27,
+						"w": 250,
+						"h": 80
+					},
+					"frame": {
+						"x": 187,
+						"y": 1,
+						"w": 250,
+						"h": 80
+					}
+				},
+				{
+					"filename": "Right_Arm.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 334,
+						"h": 133
+					},
+					"spriteSourceSize": {
+						"x": 42,
+						"y": 27,
+						"w": 250,
+						"h": 80
+					},
+					"frame": {
+						"x": 187,
+						"y": 83,
+						"w": 250,
+						"h": 80
+					}
+				},
+				{
+					"filename": "Torso.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 184,
+						"h": 133
+					},
+					"spriteSourceSize": {
+						"x": 18,
+						"y": 6,
+						"w": 148,
+						"h": 122
+					},
+					"frame": {
+						"x": 439,
+						"y": 1,
+						"w": 148,
+						"h": 122
+					}
+				},
+				{
+					"filename": "Head.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 139,
+						"h": 206
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 16,
+						"w": 105,
+						"h": 186
+					},
+					"frame": {
+						"x": 589,
+						"y": 1,
+						"w": 105,
+						"h": 186
+					}
+				}
+			]
+		}
+	]
+}

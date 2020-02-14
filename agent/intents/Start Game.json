@@ -1,26 +1,13 @@
 {
-  "id": "5e6e7efa-f416-43c8-a400-48b49c55a4b1",
-  "name": "Game Over Reveal Word",
+  "id": "f2eb67aa-2d88-4cab-98b4-778363a72f8a",
+  "name": "Start Game",
   "auto": true,
   "contexts": [],
   "responses": [
     {
       "resetContexts": false,
       "affectedContexts": [],
-      "parameters": [
-        {
-          "id": "4c9c624a-a392-440e-acbb-accca6aaaf9f",
-          "required": false,
-          "dataType": "@sys.any",
-          "name": "word",
-          "value": "$word",
-          "promptMessages": [],
-          "noMatchPromptMessages": [],
-          "noInputPromptMessages": [],
-          "outputDialogContexts": [],
-          "isList": false
-        }
-      ],
+      "parameters": [],
       "messages": [
         {
           "type": 0,

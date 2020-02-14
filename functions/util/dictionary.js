@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 'use strict';
 
 const words = ['Sombrero', 'Google', 'Mountain', 'California',
@@ -22,9 +23,9 @@ const words = ['Sombrero', 'Google', 'Mountain', 'California',
 
 const clone = (obj) => JSON.parse(JSON.stringify(obj));
 /**
- * Dictionary of words to be used by Snowman.
+ * Dictionary of words to be used by Snow Pal.
  */
-class Dictionary {
+module.exports = class Dictionary {
   /**
    * Build all entries in the dictionary.
    * This dictionary can then be replaced by a payload from an API
@@ -37,10 +38,7 @@ class Dictionary {
   /**
    * Retrieve words from the dictionary.
    *
-   * When a word is used, set isUsed flag to true, to avoid the same word
-   * to be retrieved.
-   *
-   * @return {string} an unused word to be used by Snowman placeholder.
+   * @return {string} an unused word to be used by Snow Pal placeholder.
    */
   getWord() {
     if (this.entries.length === 0) {

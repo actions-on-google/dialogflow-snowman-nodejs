@@ -1,6 +1,6 @@
 [
   {
-    "id": "5ac72120-2999-4e90-89ed-961b797f39ad",
+    "id": "2c8f8fb0-8c9b-49ac-bbc0-35cc002c713e",
     "data": [
       {
         "text": "help",
@@ -12,7 +12,7 @@
     "updated": 0
   },
   {
-    "id": "caea6a82-bf7d-4262-95cc-e38171e347d1",
+    "id": "47e61ef2-01a2-4f4e-b9c8-f8023140bafb",
     "data": [
       {
         "text": "ask for help",
@@ -24,7 +24,7 @@
     "updated": 0
   },
   {
-    "id": "70c47cb5-a9db-42f7-a7f2-4250865859d6",
+    "id": "2de0503b-18d9-4a27-9ba2-ef38544dbf25",
     "data": [
       {
         "text": "what do you want me to do?",
@@ -36,7 +36,7 @@
     "updated": 0
   },
   {
-    "id": "32dd5684-f0cb-41b8-b944-859f8046b0e0",
+    "id": "7178eef2-323b-4973-aa85-206528b2d082",
     "data": [
       {
         "text": "what are the instructions?",
@@ -48,7 +48,7 @@
     "updated": 0
   },
   {
-    "id": "882fddec-c61e-4126-a382-3a90a9471d1b",
+    "id": "1db72cf0-7c89-4e73-bb74-9ab7abf3132b",
     "data": [
       {
         "text": "instructions",

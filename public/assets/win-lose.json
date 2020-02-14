@@ -53,10 +53,5 @@
 				}
 			]
 		}
-	],
-	"meta": {
-		"app": "https://www.codeandweb.com/texturepacker",
-		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:3e79878c120a42cb8035d714c8cf1127:36e2ce13a63af1d657a2e789e9f123d0:1047580366271bd27f9a4a75e52cf22f$"
-	}
+	]
 }
